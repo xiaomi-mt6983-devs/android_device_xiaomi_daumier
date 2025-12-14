@@ -63,7 +63,9 @@ BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --dtb_offset $(BOARD_DTB_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 
-BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 bootconfig
+BOARD_KERNEL_CMDLINE += \
+   bootopt=64S3,32N2,64N2 \
+   androidboot.selinux=permissive
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := daumier
