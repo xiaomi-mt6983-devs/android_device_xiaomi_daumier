@@ -142,5 +142,9 @@ TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
 # Platform
 TARGET_BOARD_PLATFORM := mt6983
 
+# Recovery
+TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
+BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
+
 # Inherit the proprietary files
 include vendor/xiaomi/daumier/BoardConfigVendor.mk
