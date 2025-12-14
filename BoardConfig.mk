@@ -5,6 +5,8 @@
 
 DEVICE_PATH := device/xiaomi/daumier
 
+BUILD_BROKEN_DUP_RULES := true
+
 # Inherit generic_ramdisk product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
 
