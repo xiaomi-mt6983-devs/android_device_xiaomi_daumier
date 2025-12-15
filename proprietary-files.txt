@@ -1,1 +1,4 @@
 # Unpinned blobs from daumier-user 14 UP1A.231005.007 OS2.0.6.0.ULGCNXM release-keys
+
+# AEE
+vendor/lib64/libaedv.so
