@@ -167,6 +167,9 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/init/fstab.mt6983
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
 
+# Security patch level
+VENDOR_SECURITY_PATCH := 2025-06-01
+
 # SELinux
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
 
