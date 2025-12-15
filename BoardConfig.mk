@@ -167,6 +167,9 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/init/fstab.mt6983
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
 
+# SELinux
+include device/mediatek/sepolicy_vndr/SEPolicy.mk
+
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
