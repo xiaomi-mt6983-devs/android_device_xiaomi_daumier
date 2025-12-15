@@ -39,6 +39,10 @@ PRODUCT_PACKAGES += \
     create_pl_dev \
     create_pl_dev.recovery
 
+# Display
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.composer@2.3-service \
+    android.hardware.memtrack-service.mediatek-mali
 
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
