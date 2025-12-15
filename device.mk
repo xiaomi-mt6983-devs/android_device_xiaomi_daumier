@@ -102,6 +102,34 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/com.android.nfc_extras.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/com.android.nfc_extras.xml \
     frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/com.nxp.mifare.xml
 
+
+# Modules
+PRODUCT_PACKAGES += \
+    init.insmod.sh \
+    init.insmod.mt6983.cfg
+
+# Rootdir
+PRODUCT_PACKAGES += \
+    fstab.mt6983 \
+    fstab.mt6983.vendor_ramdisk \
+    init_conninfra.rc \
+    init_aee.rc \
+    init.batterysecret.rc \
+    init.cgroup.rc \
+    init.connectivity.common.rc
+    init.connectivity.rc \
+    init.mi_thermald.rc \
+    init.modem.rc \
+    init.mt6983.rc \
+    init.mt6983.usb.rc \
+    init.mtkgki.rc \
+    init.project.rc \
+    init.sensor_2_0.rc \
+    ueventd.mt6983.rc
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/init/init.recovery.mt6983.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.mt6983.rc
+
 # Shipping API levels
 PRODUCT_SHIPPING_API_LEVEL := 31
 
