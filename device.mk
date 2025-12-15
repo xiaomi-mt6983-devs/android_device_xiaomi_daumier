@@ -35,6 +35,11 @@ PRODUCT_PACKAGES += \
     checkpoint_gc \
     otapreopt_script
 
+PRODUCT_PACKAGES += \
+    create_pl_dev \
+    create_pl_dev.recovery
+
+
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
@@ -101,7 +106,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.vulkan.deqp.level-2022-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml \
     frameworks/native/data/etc/com.android.nfc_extras.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/com.android.nfc_extras.xml \
     frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/com.nxp.mifare.xml
-
 
 # Modules
 PRODUCT_PACKAGES += \
