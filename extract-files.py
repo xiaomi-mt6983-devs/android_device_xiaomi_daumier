@@ -34,6 +34,10 @@ blob_fixups: blob_fixups_user_type = {
     .replace_needed('android.hardware.security.secureclock-V1-ndk_platform.so', 'android.hardware.security.secureclock-V1-ndk.so')
     .add_needed('android.hardware.security.rkp-V3-ndk.so'),
 
+	('vendor/bin/hw/android.hardware.gnss-service.mediatek',
+	'vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so'): blob_fixup()
+    .replace_needed('android.hardware.gnss-V1-ndk_platform.so','android.hardware.gnss-V1-ndk.so'),
+
     'vendor/firmware/txpowerctrl.cfg': blob_fixup()
         .regex_replace('\t', ''),
 
