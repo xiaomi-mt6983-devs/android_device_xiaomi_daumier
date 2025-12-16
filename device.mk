@@ -215,6 +215,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/init.recovery.mt6983.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.mt6983.rc
 
+# Sensors
+PRODUCT_PACKAGES += \
+    android.hardware.sensors@2.0-subhal-impl-1.0 \
+    android.hardware.sensors-service.xiaomi-multihal
+
+PRODUCT_PACKAGES += \
+    sensors.dynamic_sensor_hal
+    
 # Shipping API levels
 PRODUCT_SHIPPING_API_LEVEL := 31
 
