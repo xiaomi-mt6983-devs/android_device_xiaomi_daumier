@@ -45,6 +45,12 @@ blob_fixups: blob_fixups_user_type = {
     .add_needed('libstagefright_foundation-v33.so')
     .replace_needed('libalsautils.so', 'libalsautils-v31.so'),
 
+    'vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b': blob_fixup()
+        .add_needed('libstagefright_foundation-v33.so')
+        .add_needed('libprocessgroup.so')
+        .add_needed('libprocessgroup_shim.so')
+        .replace_needed('libavservices_minijail_vendor.so', 'libavservices_minijail.so'),
+
 }  # fmt: skip
 
 module = ExtractUtilsModule(
