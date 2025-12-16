@@ -191,7 +191,7 @@ vendor/etc/dsi_l2m_38_0a_0a_dsc_cmd_mi.xml
 vendor/etc/cust_silky_brightness.xml
 
 # Display
-vendor/bin/hw/mt6983/android.hardware.graphics.allocator@4.0-service-mediatek.mt6983;android.hardware.graphics.allocator@4.0-service-mediatek.mediatek
+vendor/bin/hw/mt6983/android.hardware.graphics.allocator@4.0-service-mediatek.mt6983;SYMLINK=vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
 vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
 vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc
 vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc
