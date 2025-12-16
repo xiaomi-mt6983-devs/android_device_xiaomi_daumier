@@ -60,6 +60,9 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/bin/mi_thermald': blob_fixup()
         .binary_regex_replace(b'%d/on', b'%d/..'),
 
+    'vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc': blob_fixup()
+        .regex_replace('start', 'enable'),
+
 }  # fmt: skip
 
 module = ExtractUtilsModule(
