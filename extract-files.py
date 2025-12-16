@@ -78,6 +78,9 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libprocessgroup_shim.so')
         .replace_needed('libavservices_minijail_vendor.so', 'libavservices_minijail.so'),
 
+    'vendor/lib64/libteei_daemon_vfs.so': blob_fixup()
+        .add_needed('liblog.so'),
+
     'vendor/bin/mi_thermald': blob_fixup()
         .binary_regex_replace(b'%d/on', b'%d/..'),
 
