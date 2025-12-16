@@ -45,6 +45,9 @@ blob_fixups: blob_fixups_user_type = {
     .add_needed('libstagefright_foundation-v33.so')
     .replace_needed('libalsautils.so', 'libalsautils-v31.so'),
 
+    'vendor/lib64/hw/vendor.xiaomi.sensor.citsensorservice@1.1-impl.so': blob_fixup()
+        .add_needed('libui_shim.so'),
+
     'vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b': blob_fixup()
         .add_needed('libstagefright_foundation-v33.so')
         .add_needed('libprocessgroup.so')
