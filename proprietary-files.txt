@@ -3,6 +3,9 @@
 # AEE
 vendor/lib64/libaedv.so
 
+# Batterysecret
+vendor/bin/batterysecret
+
 # Display
 vendor/bin/hw/mt6983/android.hardware.graphics.allocator@4.0-service-mediatek.mt6983;android.hardware.graphics.allocator@4.0-service-mediatek.mediatek
 vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
