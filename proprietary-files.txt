@@ -185,7 +185,6 @@ vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so
 # ConsumerIR
 vendor/lib64/hw/consumerir.common.so
 
-
 # Display Configs
 vendor/etc/cust_color.xml
 vendor/etc/dsi_l2m_38_0a_0a_dsc_cmd_mi.xml
@@ -757,6 +756,13 @@ vendor/etc/init/tetheroffloadservice.rc
 vendor/lib64/libforkexecwrap.so
 vendor/lib64/libifcutils_mtk.so
 vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
+
+# Touch Feature
+vendor/bin/hw/vendor.xiaomi.hw.touchfeature@1.0-service
+vendor/etc/init/vendor.xiaomi.hw.touchfeature@1.0-service.rc
+vendor/etc/vintf/manifest/vendor.xiaomi.hw.touchfeature@1.0-service.xml
+vendor/lib64/hw/vendor.xiaomi.hw.touchfeature@1.0-impl.so
+vendor/lib64/vendor.xiaomi.hw.touchfeature@1.0.so
 
 # Thermal (Xiaomi)
 vendor/bin/mi_thermald
