@@ -34,6 +34,9 @@ blob_fixups: blob_fixups_user_type = {
     .replace_needed('android.hardware.security.secureclock-V1-ndk_platform.so', 'android.hardware.security.secureclock-V1-ndk.so')
     .add_needed('android.hardware.security.rkp-V3-ndk.so'),
 
+    'vendor/firmware/txpowerctrl.cfg': blob_fixup()
+        .regex_replace('\t', ''),
+
     'vendor/lib64/hw/mt6983/vendor.mediatek.hardware.pq@2.15-impl.so': blob_fixup()
     .replace_needed('libutils.so', 'libutils-v32.so')
     .replace_needed('libsensorndkbridge.so', 'android.hardware.sensors@1.0-convert-shared.so'),
