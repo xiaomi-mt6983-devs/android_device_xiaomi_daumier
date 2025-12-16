@@ -1179,6 +1179,20 @@ service charger /system/bin/charger
     group system graphics
     seclabel u:r:healthd:s0
 
+service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
+    override
+    class hal
+    user audioserver
+    # media gid needed for /dev/fm (radio) and for /data/misc/media (tee)
+    group audio camera drmrpc inet media mediadrm net_bt net_bt_admin net_bw_acct wakelock context_hub system sdcard_rw
+    capabilities BLOCK_SUSPEND SYS_NICE
+    ioprio rt 4
+    task_profiles ProcessCapacityHigh HighPerformance
+    #Audio-add BEGIN
+    socket audio_hw_socket seqpacket 0666 system system
+    #END
+    onrestart restart audioserver
+
 on property:vendor.audio.voice.receiver.status=on
     write /sys/class/thermal/thermal_message/voice_receiver_state 10000
 
