@@ -51,6 +51,16 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib64/hw/vendor.xiaomi.sensor.citsensorservice@1.1-impl.so': blob_fixup()
         .add_needed('libui_shim.so'),
 
+     'vendor/lib64/mt6983/libneuralnetworks_sl_driver_mtk_prebuilt.so': blob_fixup()
+        .clear_symbol_version('AHardwareBuffer_allocate')
+        .clear_symbol_version('AHardwareBuffer_release')
+        .clear_symbol_version('AHardwareBuffer_createFromHandle')
+        .clear_symbol_version('AHardwareBuffer_describe')
+        .clear_symbol_version('AHardwareBuffer_getNativeHandle')
+        .clear_symbol_version('AHardwareBuffer_lock')
+        .clear_symbol_version('AHardwareBuffer_unlock')
+        .add_needed('libbase_shim.so'),
+
     'vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b': blob_fixup()
         .add_needed('libstagefright_foundation-v33.so')
         .add_needed('libprocessgroup.so')
