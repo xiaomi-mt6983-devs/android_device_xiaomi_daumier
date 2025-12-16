@@ -79,6 +79,10 @@ $(call soong_config_set,android_hardware_audio,skip_speaker_layout_channel_mask_
 
 TARGET_EXCLUDES_AUDIOFX := true
 
+# Bluetooth
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth-service.mediatek
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.3-service \
