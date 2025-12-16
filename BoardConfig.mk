@@ -7,15 +7,6 @@ DEVICE_PATH := device/xiaomi/daumier
 
 BUILD_BROKEN_DUP_RULES := true
 
-# Inherit generic_ramdisk product configuration
-$(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
-
-# # Project ID Quota
-$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
-
-# Setup dalvik vm configs
-$(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
-
 # A/B
 AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS += \

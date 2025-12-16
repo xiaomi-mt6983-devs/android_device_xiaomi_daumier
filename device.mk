@@ -3,6 +3,15 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Inherit generic_ramdisk product configuration
+$(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
+
+# # Project ID Quota
+$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
+
+# Setup dalvik vm configs
+$(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
+
 # A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
 
@@ -205,7 +214,7 @@ PRODUCT_PACKAGES += \
     init_aee.rc \
     init.batterysecret.rc \
     init.cgroup.rc \
-    init.connectivity.common.rc
+    init.connectivity.common.rc \
     init.connectivity.rc \
     init.mi_thermald.rc \
     init.modem.rc \
