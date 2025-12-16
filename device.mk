@@ -125,6 +125,16 @@ PRODUCT_PACKAGES += \
     libcppbor_external.vendor \
     libkeymint.vendor
 
+# Modules
+PRODUCT_PACKAGES += \
+    init.insmod.sh \
+    init.insmod.mt6983.cfg
+
+# Media
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/seccomp,$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy) \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media,$(TARGET_COPY_OUT_VENDOR)/etc)
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
@@ -182,17 +192,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.hardware_keystore_V3.xml
-
-# Modules
-PRODUCT_PACKAGES += \
-    init.insmod.sh \
-    init.insmod.mt6983.cfg
-
-# Media
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/seccomp,$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy) \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media,$(TARGET_COPY_OUT_VENDOR)/etc)
-
+    
 # Rootdir
 PRODUCT_PACKAGES += \
     fstab.mt6983 \
@@ -222,7 +222,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     sensors.dynamic_sensor_hal
-    
+
 # Shipping API levels
 PRODUCT_SHIPPING_API_LEVEL := 31
 
