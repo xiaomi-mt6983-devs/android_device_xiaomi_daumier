@@ -219,6 +219,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/init.recovery.mt6983.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.mt6983.rc
 
+# Radio
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/rsc,$(TARGET_COPY_OUT_VENDOR)/etc/rsc)
+
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@2.0-subhal-impl-1.0 \
@@ -245,7 +249,7 @@ $(call soong_config_set,android_hardware_mediatek_usb,audio_accessory_supported,
 
 PRODUCT_PACKAGES += \
     android.hardware.usb-service.mediatek \
-    
+
 # Vendor service manager
 PRODUCT_PACKAGES += \
     vndservicemanager
