@@ -38,7 +38,6 @@ ro.vendor.pq.mtk_backlight_smooth_support=0
 ro.vendor.pq.mtk_ultra_dimming_support=0
 ro.vendor.pq.mtk_blulight_def_support=0
 
-
 # SurfaceFlinger
 ro.surface_flinger.enable_frame_rate_override=false
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
@@ -62,3 +61,10 @@ debug.sf.region_sampling_timer_timeout_ns=200000000
 debug.sf.set_idle_timer_ms=1100
 debug.sf.set_touch_timer_ms=1100
 debug.sf.treat_170m_as_sRGB=1
+
+# TEE
+ro.vendor.mtk_tee_gp_support=1
+ro.hardware.wechat=beanpod
+ro.hardware.kmsetkey=beanpod
+ro.hardware.gatekeeper=beanpod
+ro.vendor.mtk_microtrust_tee_support=1

@@ -70,6 +70,13 @@ vendor/lib64/vendor.mediatek.hardware.pq@2.9.so
 # Display (Thread unwinding)
 vendor/lib64/libladder.so
 
+# Keymint
+vendor/bin/hw/android.hardware.security.keymint@1.0-service.beanpod;DISABLE_DEPS
+vendor/etc/init/android.hardware.security.keymint-service.beanpod.rc
+vendor/etc/vintf/manifest/android.hardware.security.keymint-service.beanpod.xml
+vendor/etc/vintf/manifest/android.hardware.security.secureclock-service.beanpod.xml
+vendor/etc/vintf/manifest/android.hardware.security.sharedsecret-service.beanpod.xml
+
 # NVRAM
 vendor/bin/hw/vendor.mediatek.hardware.nvram@1.1-service
 vendor/bin/nvram_daemon
@@ -84,3 +91,21 @@ vendor/lib64/libnvram.so
 vendor/lib64/libnvram_sec.so
 vendor/lib64/vendor.mediatek.hardware.nvram@1.0.so
 vendor/lib64/vendor.mediatek.hardware.nvram@1.1.so
+
+# Trusted Execution Environment (TEE)
+vendor/bin/hw/vendor.microtrust.hardware.thh@2.0-service
+vendor/bin/teei_daemon
+vendor/etc/init/microtrust.rc
+vendor/etc/init/vendor.microtrust.hardware.thh@2.0-service.rc
+vendor/etc/vintf/manifest/manifest.microtrust.xml
+vendor/lib64/libTEECommon.so
+vendor/lib64/libgz_gp_client.so
+vendor/lib64/libgz_uree.so
+vendor/lib64/libimsg_log.so
+vendor/lib64/libteeclientjni_isee.so
+vendor/lib64/libteeclientjni_isee@1.1.so
+vendor/lib64/libteei_daemon_vfs.so
+vendor/lib64/libthha.so
+vendor/lib64/libthhclient.so
+vendor/lib64/vendor.microtrust.hardware.thh@2.0.so
+vendor/lib64/wechat.beanpod.so
