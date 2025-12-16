@@ -604,6 +604,7 @@ vendor/lib64/mt6983/libneuralnetworks_sl_driver_mtk_prebuilt.so;SYMLINK=vendor/l
 vendor/lib64/mt6983/libneuron_adapter_mgvi.so;SYMLINK=vendor/lib64/libneuron_adapter_mgvi.so
 vendor/lib64/mt6983/libneuron_runtime.5.so;SYMLINK=vendor/lib64/libneuron_runtime.5.so
 vendor/lib64/mt6983/libneuron_wrapper.so;SYMLINK=vendor/lib64/libneuron_wrapper.so
+vendor/lib64/libapu_mdw.so
 vendor/lib64/libapu_mdw_batch.so
 vendor/lib64/libapusys.so
 vendor/lib64/libapusys_edma.so
