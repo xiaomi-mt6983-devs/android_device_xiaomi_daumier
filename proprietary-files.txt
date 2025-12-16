@@ -214,6 +214,8 @@ vendor/lib64/mt6983/libpq_cust_base.so;SYMLINK=vendor/lib64/libpq_cust_base.so
 vendor/lib64/mt6983/libpq_prot.so;SYMLINK=vendor/lib64/libpq_prot.so
 vendor/lib64/mt6983/libpqparamparser.so;SYMLINK=vendor/lib64/libpqparamparser.so
 vendor/lib64/mt6983/libpqpconfig.so;SYMLINK=vendor/lib64/libpqpconfig.so
+vendor/lib64/mt6983/libdpframework.so;SYMLINK=vendor/lib64/libdpframework.so
+vendor/lib64/mt6983/libaiselector.so;SYMLINK=vendor/lib64/libaiselector.so
 vendor/lib64/libDefaultFpsActor.so
 vendor/lib64/libgralloc_extra.so
 vendor/lib64/libion_mtk.so
@@ -237,6 +239,7 @@ vendor/lib64/libgralloctypes_mtk.so
 vendor/lib64/libmml.so
 vendor/lib64/libpqframework.so
 vendor/lib64/libudf.so
+vendor/lib64/libged.so
 vendor/lib64/vendor.mediatek.hardware.composer_ext@1.0.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.0.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.1.so
