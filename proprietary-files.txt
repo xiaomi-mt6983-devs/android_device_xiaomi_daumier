@@ -215,6 +215,9 @@ vendor/lib64/mt6983/libpq_prot.so;SYMLINK=vendor/lib64/libpq_prot.so
 vendor/lib64/mt6983/libpqparamparser.so;SYMLINK=vendor/lib64/libpqparamparser.so
 vendor/lib64/mt6983/libpqpconfig.so;SYMLINK=vendor/lib64/libpqpconfig.so
 vendor/lib64/libDefaultFpsActor.so
+vendor/lib64/libgralloc_extra.so
+vendor/lib64/libion_mtk.so
+vendor/lib64/libion_ulit.so
 vendor/lib64/libFrameRecord.so
 vendor/lib64/libNoFpsActor.so
 vendor/lib64/libaal_cust.so
