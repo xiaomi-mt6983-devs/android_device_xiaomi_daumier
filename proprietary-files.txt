@@ -758,7 +758,7 @@ vendor/bin/hw/vendor.xiaomi.hw.touchfeature@1.0-service
 vendor/etc/init/vendor.xiaomi.hw.touchfeature@1.0-service.rc
 vendor/etc/vintf/manifest/vendor.xiaomi.hw.touchfeature@1.0-service.xml
 vendor/lib64/hw/vendor.xiaomi.hw.touchfeature@1.0-impl.so
-vendor/lib64/vendor.xiaomi.hw.touchfeature@1.0.so
+vendor/lib64/vendor.xiaomi.hw.touchfeature@1.0.so;MODULE_SUFFIX=_vendor
 
 # Thermal (Xiaomi)
 vendor/bin/mi_thermald
