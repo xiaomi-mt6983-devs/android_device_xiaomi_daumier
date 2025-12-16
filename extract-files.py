@@ -69,6 +69,9 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('AHardwareBuffer_unlock')
         .add_needed('libbase_shim.so'),
 
+    ('vendor/lib64/mt6983/libaalservice.so', 'vendor/bin/mnld'): blob_fixup()
+        .replace_needed('libsensorndkbridge.so', 'android.hardware.sensors@1.0-convert-shared.so'),
+        
     'vendor/lib64/mt6983/libmnl.so': blob_fixup()
         .add_needed('libcutils.so'),
 
