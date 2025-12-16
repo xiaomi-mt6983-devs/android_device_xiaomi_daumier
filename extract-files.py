@@ -39,7 +39,7 @@ blob_fixups: blob_fixups_user_type = {
 
     'vendor/bin/hw/mtkfusionrild': blob_fixup()
         .add_needed('libutils-v32.so'),
-        
+
     'vendor/lib64/hw/mt6983/vendor.mediatek.hardware.pq@2.15-impl.so': blob_fixup()
     .replace_needed('libutils.so', 'libutils-v32.so')
     .replace_needed('libsensorndkbridge.so', 'android.hardware.sensors@1.0-convert-shared.so'),
@@ -56,6 +56,9 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libprocessgroup.so')
         .add_needed('libprocessgroup_shim.so')
         .replace_needed('libavservices_minijail_vendor.so', 'libavservices_minijail.so'),
+
+    'vendor/bin/mi_thermald': blob_fixup()
+        .binary_regex_replace(b'%d/on', b'%d/..'),
 
 }  # fmt: skip
 
