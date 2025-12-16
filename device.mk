@@ -56,6 +56,11 @@ PRODUCT_PACKAGES += \
     android.hardware.health-service.mediatek \
     android.hardware.health-service.mediatek-recovery
 
+# Gatekeeper
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0-impl \
+    android.hardware.gatekeeper@1.0-service
+
 # Keymaster
 PRODUCT_PACKAGES += \
     libkeymaster_messages.vendor \

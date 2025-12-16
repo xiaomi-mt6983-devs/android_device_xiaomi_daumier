@@ -70,6 +70,9 @@ vendor/lib64/vendor.mediatek.hardware.pq@2.9.so
 # Display (Thread unwinding)
 vendor/lib64/libladder.so
 
+# Gatekeeper
+vendor/lib64/hw/gatekeeper.beanpod.so
+
 # Keymint
 vendor/bin/hw/android.hardware.security.keymint@1.0-service.beanpod;DISABLE_DEPS
 vendor/etc/init/android.hardware.security.keymint-service.beanpod.rc
