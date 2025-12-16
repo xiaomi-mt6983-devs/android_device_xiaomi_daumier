@@ -765,12 +765,6 @@ vendor/lib64/libforkexecwrap.so
 vendor/lib64/libifcutils_mtk.so
 vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
 
-# Touch Feature
-vendor/bin/hw/vendor.xiaomi.hw.touchfeature@1.0-service
-vendor/etc/init/vendor.xiaomi.hw.touchfeature@1.0-service.rc
-vendor/etc/vintf/manifest/vendor.xiaomi.hw.touchfeature@1.0-service.xml
-vendor/lib64/hw/vendor.xiaomi.hw.touchfeature@1.0-impl.so
-
 # Thermal (Xiaomi)
 vendor/bin/mi_thermald
 vendor/lib64/hw/thermal_hal.so

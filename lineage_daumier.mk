@@ -23,4 +23,4 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="daumier-user 14 UP1A.231005.007 OS2.0.6.0.ULGCNXM release-keys" \
-    BuildFingerprint := Xiaomi/daumier/daumier:14/UP1A.231005.007/OS2.0.6.0.ULGCNXM:user/release-keys
+    BuildFingerprint=Xiaomi/daumier/daumier:14/UP1A.231005.007/OS2.0.6.0.ULGCNXM:user/release-keys
