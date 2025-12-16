@@ -167,5 +167,10 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/mediatek \
     hardware/xiaomi
 
+
+# Vendor service manager
+PRODUCT_PACKAGES += \
+    vndservicemanager
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/daumier/daumier-vendor.mk)
