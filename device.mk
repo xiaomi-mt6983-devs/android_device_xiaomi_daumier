@@ -125,6 +125,10 @@ PRODUCT_PACKAGES += \
     libcppbor_external.vendor \
     libkeymint.vendor
 
+# Light
+PRODUCT_PACKAGES += \
+    android.hardware.light-service.lineage
+    
 # Modules
 PRODUCT_PACKAGES += \
     init.insmod.sh \
@@ -192,7 +196,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.hardware_keystore_V3.xml
-    
+
 # Rootdir
 PRODUCT_PACKAGES += \
     fstab.mt6983 \
