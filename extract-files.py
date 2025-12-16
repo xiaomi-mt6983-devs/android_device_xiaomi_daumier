@@ -48,6 +48,10 @@ blob_fixups: blob_fixups_user_type = {
     .add_needed('libstagefright_foundation-v33.so')
     .replace_needed('libalsautils.so', 'libalsautils-v31.so'),
 
+    ('vendor/lib64/libnvram.so',
+     'vendor/lib64/libsysenv.so'): blob_fixup()
+        .add_needed('libbase_shim.so'),
+
     'vendor/lib64/hw/vendor.xiaomi.sensor.citsensorservice@1.1-impl.so': blob_fixup()
         .add_needed('libui_shim.so'),
 
