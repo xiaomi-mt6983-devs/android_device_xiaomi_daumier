@@ -165,8 +165,6 @@ vendor/etc/audio_param/VoWVoiceCommand_ParamUnitDesc.xml
 
 # Audio Hardware
 vendor/lib64/hw/audio.primary.mediatek.so;SYMLINK=vendor/lib64/hw/audio.primary.mt6983.so
-vendor/lib64/hw/audio.r_submix.mediatek.so;SYMLINK=vendor/lib64/hw/audio.r_submix.mt6983.so
-vendor/lib64/libalsautils.so:vendor/lib64/libalsautils-v31.so;FIX_SONAME
 vendor/lib64/libmisound.so
 vendor/lib64/libmisoundcrossfade.so
 
@@ -740,7 +738,6 @@ vendor/etc/init/vendor.xiaomi.sensor.citsensorservice@1.1-service.rc
 vendor/etc/vintf/manifest/vendor.xiaomi.sensor.citsensorservice@1.1-service.xml
 vendor/lib64/hw/vendor.xiaomi.sensor.citsensorservice@1.1-impl.so
 vendor/lib64/libssccalapi.so
-vendor/lib64/libhfmanagerwrapper.so
 vendor/lib64/vendor.xiaomi.sensor.citsensorservice@1.0.so
 vendor/lib64/vendor.xiaomi.sensor.citsensorservice@1.1.so
 
