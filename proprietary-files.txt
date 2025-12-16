@@ -185,6 +185,12 @@ vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so
 # ConsumerIR
 vendor/lib64/hw/consumerir.common.so
 
+
+# Display Configs
+vendor/etc/cust_color.xml
+vendor/etc/dsi_l2m_38_0a_0a_dsc_cmd_mi.xml
+vendor/etc/cust_silky_brightness.xml
+
 # Display
 vendor/bin/hw/mt6983/android.hardware.graphics.allocator@4.0-service-mediatek.mt6983;android.hardware.graphics.allocator@4.0-service-mediatek.mediatek
 vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
