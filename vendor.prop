@@ -45,6 +45,9 @@ ro.bluetooth.a2dp_offload.supported=true
 ro.vendor.bt.platform=6983
 vendor.bluetooth.ldac.abr=true
 
+# ConsumerIR
+ro.hardware.consumerir=common
+
 # Display
 ro.hardware.egl=meow
 ro.hardware.gralloc=common

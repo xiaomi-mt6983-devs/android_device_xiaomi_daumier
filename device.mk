@@ -83,6 +83,10 @@ TARGET_EXCLUDES_AUDIOFX := true
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth-service.mediatek
 
+# ConsumerIR
+PRODUCT_PACKAGES += \
+    android.hardware.ir-service.example
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.3-service \
