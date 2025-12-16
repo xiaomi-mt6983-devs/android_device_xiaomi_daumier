@@ -245,8 +245,7 @@ $(call soong_config_set,android_hardware_mediatek_usb,audio_accessory_supported,
 
 PRODUCT_PACKAGES += \
     android.hardware.usb-service.mediatek \
-    android.hardware.usb.gadget-service.mediatek
-
+    
 # Vendor service manager
 PRODUCT_PACKAGES += \
     vndservicemanager
