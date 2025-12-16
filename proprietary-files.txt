@@ -473,6 +473,11 @@ vendor/thh/ta/7778c03fc30c4dd0a319ea29643d4d4b.ta
 vendor/thh/ta/8aaaf201246000007143fe4f7c823c80.ta
 vendor/thh/ta/isee_model.json
 
+# USB
+vendor/bin/hw/android.hardware.usb@1.2-service-mediatekv2
+vendor/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc
+vendor/etc/vintf/manifest/android.hardware.usb@1.2-service-mediatekv2.xml
+
 # Wi-Fi
 vendor/bin/wlan_assistant
 vendor/etc/init/init.wlan_drv.rc
