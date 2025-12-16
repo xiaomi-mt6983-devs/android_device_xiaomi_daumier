@@ -9,14 +9,7 @@ prebuilt_etc {
     src: "fstab.mt6983",
     vendor: true,
     vendor_ramdisk_available: true,
-}
-
-prebuilt_etc {
-    name: "init.conninfra.rc",
-    src: "init.conninfra.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
+}}
 
 prebuilt_etc {
     name: "init.aee.rc",

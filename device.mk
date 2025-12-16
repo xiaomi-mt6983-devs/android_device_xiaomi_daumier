@@ -209,7 +209,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fstab.mt6983 \
     fstab.mt6983.vendor_ramdisk \
-    init_conninfra.rc \
     init_aee.rc \
     init.batterysecret.rc \
     init.cgroup.rc \
