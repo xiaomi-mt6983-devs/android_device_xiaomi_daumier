@@ -11,6 +11,13 @@ prebuilt_etc {
     vendor_ramdisk_available: true,
 }
 
+sh_binary {
+    name: "set_permissive.sh",
+    src: "set_permissive.sh",
+    sub_dir: "system/bin",
+}
+
+
 prebuilt_etc {
     name: "init.aee.rc",
     src: "init.aee.rc",
