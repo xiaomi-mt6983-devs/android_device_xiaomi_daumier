@@ -45,11 +45,6 @@ ro.bluetooth.a2dp_offload.supported=true
 ro.vendor.bt.platform=6983
 vendor.bluetooth.ldac.abr=true
 
-# Connectivity
-vendor/bin/conninfra_loader
-vendor/etc/init/init.connfem.rc
-vendor/etc/init/init.conninfra.rc
-
 # ConsumerIR
 ro.hardware.consumerir=common
 

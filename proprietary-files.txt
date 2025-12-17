@@ -192,6 +192,11 @@ vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so
 # ConsumerIR
 vendor/lib64/hw/consumerir.common.so
 
+# Connectivity
+vendor/bin/conninfra_loader
+vendor/etc/init/init.connfem.rc
+vendor/etc/init/init.conninfra.rc
+
 # Display Configs
 vendor/etc/cust_color.xml
 vendor/etc/dsi_l2m_38_0a_0a_dsc_cmd_mi.xml
