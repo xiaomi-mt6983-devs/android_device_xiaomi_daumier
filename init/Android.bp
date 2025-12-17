@@ -11,6 +11,13 @@ prebuilt_etc {
     vendor_ramdisk_available: true,
 }
 
+prebuilt_etc {
+    name: "init.mt6983.power.rc",
+    src: "init.mt6983.power.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
 sh_binary {
     name: "set_permissive.sh",
     src: "set_permissive.sh",

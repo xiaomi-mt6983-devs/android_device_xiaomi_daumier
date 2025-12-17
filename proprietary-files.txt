@@ -196,6 +196,7 @@ vendor/lib64/hw/consumerir.common.so
 vendor/etc/cust_color.xml
 vendor/etc/dsi_l2m_38_0a_0a_dsc_cmd_mi.xml
 vendor/etc/cust_silky_brightness.xml
+vendor/etc/vintf/manifest/manifest_hwcomposer.xml
 
 # Display
 vendor/bin/hw/mt6983/android.hardware.graphics.allocator@4.0-service-mediatek.mt6983;SYMLINK=vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
@@ -670,6 +671,10 @@ vendor/lib64/libnvram.so
 vendor/lib64/libnvram_sec.so
 vendor/lib64/vendor.mediatek.hardware.nvram@1.0.so
 vendor/lib64/vendor.mediatek.hardware.nvram@1.1.so
+
+# Power
+vendor/lib64/vendor.mediatek.hardware.power@1.1.so
+vendor/lib64/vendor.mediatek.hardware.power@2.0.so
 
 # Radio
 vendor/bin/hw/mtkfusionrild
